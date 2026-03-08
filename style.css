@@ -1,0 +1,153 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+
+  /* Background image */
+  background:
+    linear-gradient(
+      rgba(2, 6, 23, 0.85),
+      rgba(2, 6, 23, 0.85)
+    ),
+    url("resume.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Main Card */
+.container {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(6, 5, 92, 0.95);
+  border-radius: 14px;
+  padding: 28px 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(18, 56, 63, 0.06);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  color: #2cbce4;
+  letter-spacing: 0.4px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-size: 0.9rem;
+  color: #f7f7fd;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid #0f9ac9;
+  background: #c7d1fc;
+  color: #020c17;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+input::placeholder {
+  color: #8c98ab;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  background: linear-gradient(135deg, #f91c48, #1010df);
+  color: #edecf1;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Result Section */
+#result {
+  margin-top: 26px;
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+/* Score */
+#result h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+
+#score {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+/* Level Text */
+#level {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-top: 6px;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 22px;
+  }
+
+  .container h1 {
+    font-size: 1.4rem;
+  }
+}
+

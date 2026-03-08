@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Developer Profile Scorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Developer Profile Scorer</h1>
+
+  <label>LeetCode Problems Solved</label>
+  <input type="number" id="leetcode" placeholder="e.g. 300">
+<label>GitHub Profile URL</label>
+<input type="text" id="githubUrl" placeholder="https://github.com/username">
+
+<label>Codeforces Handle</label>
+<input type="text" id="codeforcesHandle" placeholder="e.g. tourist">
+
+
+
+  <button onclick="calculateScore()">Calculate Resume Score</button>
+
+  <div id="result" class="hidden">
+    <h2>Resume Score: <span id="score"></span>%</h2>
+    <p id="level"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
